@@ -9,6 +9,7 @@ footer{
     font-size: var(--fs-600);
     line-height: 45px;
     margin-bottom: 1rem;
+    /* padding: ; */
 }
 .btn-secondary{   
     font-size: 18px;
