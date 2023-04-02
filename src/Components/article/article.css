@@ -1,0 +1,23 @@
+.blog__post h3{
+    font-weight: 800;
+    font-size: 19.3154px;
+    line-height: 30px;     
+    color: #FFFFFF;
+    padding: 0.7rem 0 0.7rem;    
+}
+.blog__post img{
+    height: 150px;   
+}
+.blog__post p{
+    font-weight: 700;
+    font-size: var(--fs-100);
+    line-height: 35px;    
+    color: #FFFFFF;
+}
+
+.blog__post{
+    background: var(--color-footer);
+}
+.blog__post-content{
+    padding: 1rem ;
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --font-family: 'Manrope', sans-serif;
+    
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    
+    --color-bg: #040C18;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 200;
+    --fw-500: 200;
+    --fw-600: 200;
+    --fw-700: 200;
+    --fw-800: 200;
+
+    
+    --fs-100: 0.875rem;
+    --fs-200: 1rem;
+    --fs-300: 1.2rem;
+    --fs-400: 1.4rem;
+    --fs-500: 1.7rem;
+    --fs-600: 2.25rem;
+}
+    
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+
+body{
+    background-color: var(--color-bg); 
+    font-family: var(--font-family);
+    position: relative;
+}
+.container{
+    --max-width: 1170px;
+    --padding: 1rem;    
+    width: min(var(--max-width), calc(100% - (var(--padding) * 2)));
+    /* background-color: red; */
+    margin-inline: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+img{
+    width: 100%;    
+}
+
+.gradient__bg{
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient__text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .section__padding{
+    padding: 4rem 6rem;
+} */
+.section__margin{
+    margin-top: 4rem;
+}
+.scale-up-center {
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ /* ----------------------------------------
+    animation scale-up-center
+  ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/* ------------------ Large Tablets ----------------------*/ 
+@media screen and (min-width: 550px) {
+    :root {
+        --fs-100: 0.875rem;
+        --fs-200: 1.25rem;
+        --fs-300: 1.2rem;
+        --fs-400: 1.4rem;
+        --fs-500: 1.7rem;
+        --fs-600: 3.8rem;
+    }
+    
+    .section__margin {
+        margin-top: 4rem;
+    }
+}
+
+/* ------------------ Mobile Devices ----------------------*/
+@media screen and (min-width: 1050px) {
+    :root {
+        --fs-100: 1rem;
+        --fs-200: 1.25rem;
+        --fs-300: 1.2rem;
+        --fs-400: 1.5rem;
+        --fs-500: 2.125rem;
+        --fs-600: 3.8rem;         
+    }
+
+    .section__margin {
+        margin-top: 4rem;
+    }
+}

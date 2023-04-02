@@ -1,0 +1,123 @@
+.header__container{
+    display: flex;    
+    height: 5rem;    
+    align-items: center;
+    gap: 4.3rem;
+    position: relative;
+}
+.header__container > .links{
+    display: none;
+}
+nav{
+    display: flex;
+    flex: 1;
+}
+.nav__links{
+    display: flex;
+    gap: 2.125rem;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex: 1; */
+}
+.nav__links li{
+    list-style: none;
+}
+.nav__links li a,
+.links p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.links p{
+    align-self: center;
+}
+.logo{
+    width: 4rem;
+    height: 1rem;    
+}
+nav .links{
+    display: flex;    
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.links button{
+    padding: 1em 2.8em;
+    background: #FF4820;
+    border-radius: 5px;    
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-left: 26px;
+}
+.nav__menu{
+    padding: 0.6rem;
+    background: transparent;
+    display: none;   
+}
+
+@media screen and (max-width: 1050px) {
+    .header__container{
+        justify-content: space-between;
+    }
+
+    .header__container>.links {
+        display: flex;
+        position: absolute;
+        right: 4rem;
+    }
+    .header__container >.links button{
+        padding: 0.5em;
+    }
+
+    .nav__menu {
+        display: block;
+    }
+    nav{
+        display: none;
+        
+    }
+    nav#reveal{
+        display: flex;        
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+        flex-direction: column;
+        width: 70vw;
+        padding: 2rem;
+        align-items: center;
+        gap: 3rem;
+        background: var(--color-footer);
+    }
+    .nav__links{
+        flex-direction: column;
+    }
+    nav .links{
+        display: none;
+    }
+   .nav__links li a,
+   .links button,
+   .links p{
+    font-size: 1.5625rem;
+   }
+   .links button {
+       padding: 0.7em;
+   }   
+}
+
+@media screen and (max-width: 600px){
+    .header__container>.links {
+            display: none;
+    }
+    nav .links {
+        display: flex;
+        flex-direction: column;
+        margin-left: unset;
+        justify-self: center;
+        gap: 2rem;       
+    }
+}

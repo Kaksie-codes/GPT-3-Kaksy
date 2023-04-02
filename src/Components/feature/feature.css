@@ -1,0 +1,31 @@
+.GPT3__features-container{
+    width: 100%;
+}
+.GPT3__features-container .GPT3__features-container-header h1{
+    font-weight: 800;
+    font-size: var(-fs-400);
+    /* line-height: 75px; */
+    letter-spacing: -0.04em;
+    color: #FFFFFF; 
+}
+.GPT3__features-container .GPT3__features-container-header{
+    position: relative; 
+    padding-top: 15px;
+}
+.GPT3__features-container .GPT3__features-container-header::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 38px;
+    top: 0;
+    left: 0;    
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    
+
+}
+.GPT3__features-container .GPT3__features-container-content p{
+    font-weight: 500;
+    font-size: var(--fs-100);
+    line-height: 30px;    
+    color: var(--color-text);
+}
